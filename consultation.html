@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a Consultation — Nerd On Retainer</title>
+<meta name="description" content="Book a consultation with Nerd On Retainer to talk through websites, apps, automations, portals, dashboards, integrations, and ongoing software support.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Book a Consultation — Nerd On Retainer">
+<meta property="og:description" content="Talk through your software wish list and find out if a monthly development retainer is the right fit.">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" data-nav>
+  <a href="index.html#top" class="nav-logo">
+    <span class="logo-badge">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#08222b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 7 3 12 8 17"></polyline><polyline points="16 7 21 12 16 17"></polyline></svg>
+    </span>
+    <span class="logo-text">Nerd <span class="teal">On Retainer</span></span>
+  </a>
+  <div class="nav-right">
+    <div class="nav-links">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="portal-login.html">Portal</a>
+    </div>
+    <a href="index.html#pricing" class="btn btn-secondary btn-nav">View pricing</a>
+  </div>
+</nav>
+
+<main>
+  <section class="page-hero">
+    <div class="hero-glow"></div>
+    <div class="hero-dots"></div>
+    <div class="page-grid">
+      <div class="page-copy reveal">
+        <div class="badge">
+          <span class="dot blink"></span>
+          <span>Free fit check</span>
+        </div>
+        <h1 class="hero-h1">Book a<br><span class="teal-glow">consultation.</span></h1>
+        <p class="hero-sub">Tell us what you need built, fixed, automated, or connected. We'll talk through scope, priority, timeline, and whether Nerd On Retainer is the right fit before you pay for anything.</p>
+        <div class="trust">
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>No pressure</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Practical next steps</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Built for SMBs</span>
+        </div>
+      </div>
+      <div class="page-panel reveal" data-reveal-delay="120">
+        <form class="lead-form" data-consultation-form>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization">
+          </div>
+          <div class="form-row">
+            <label for="need">What do you need help with?</label>
+            <select id="need" name="need" required>
+              <option value="">Choose one</option>
+              <option>Website or landing page</option>
+              <option>Mobile app</option>
+              <option>Customer portal or dashboard</option>
+              <option>AI automation</option>
+              <option>Stripe or payment integration</option>
+              <option>Internal business software</option>
+              <option>Ongoing maintenance</option>
+              <option>Something wonderfully specific</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Quick context</label>
+            <textarea id="message" name="message" rows="5" placeholder="What are you trying to build, fix, or automate?" required></textarea>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Email consultation request</button>
+          <p class="form-note">This opens your email app with the details pre-filled. Calendar booking link coming soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tint">
+    <div class="steps-grid compact">
+      <div class="step-card reveal"><div class="step-num">01</div><h3>Send the basics</h3><p>Share the business problem, desired outcome, and any current tools you use.</p></div>
+      <div class="step-card reveal" data-reveal-delay="80"><div class="step-num">02</div><h3>Talk through fit</h3><p>We'll map the first useful request and decide whether the full retainer or maintenance makes sense.</p></div>
+      <div class="step-card reveal" data-reveal-delay="160"><div class="step-num">03</div><h3>Start clean</h3><p>If it's a fit, we set up access, priorities, and the first active request without turning onboarding into a circus.</p></div>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

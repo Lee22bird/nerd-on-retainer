@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Client Portal — Nerd On Retainer</title>
+<meta name="description" content="Client portal access for Nerd On Retainer customers.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Client Portal — Nerd On Retainer">
+<meta property="og:description" content="Access your requests, updates, invoices, and project communication.">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" data-nav>
+  <a href="index.html#top" class="nav-logo">
+    <span class="logo-badge">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#08222b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 7 3 12 8 17"></polyline><polyline points="16 7 21 12 16 17"></polyline></svg>
+    </span>
+    <span class="logo-text">Nerd <span class="teal">On Retainer</span></span>
+  </a>
+  <div class="nav-right">
+    <div class="nav-links">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="consultation.html">Consultation</a>
+    </div>
+    <a href="consultation.html" class="btn btn-primary btn-nav">Book a call</a>
+  </div>
+</nav>
+
+<main>
+  <section class="page-hero portal-hero">
+    <div class="hero-glow"></div>
+    <div class="hero-dots"></div>
+    <div class="page-grid">
+      <div class="page-copy reveal">
+        <div class="badge">
+          <span class="dot blink"></span>
+          <span>Client access</span>
+        </div>
+        <h1 class="hero-h1">Your project<br><span class="teal-glow">command center.</span></h1>
+        <p class="hero-sub">The portal is where active clients track requests, review updates, send notes, and keep the build moving without digging through old email threads.</p>
+        <div class="portal-list">
+          <span>Request queue</span>
+          <span>Project updates</span>
+          <span>Support messages</span>
+          <span>Billing links</span>
+        </div>
+      </div>
+      <div class="page-panel reveal" data-reveal-delay="120">
+        <form class="lead-form portal-form" data-portal-form>
+          <div class="form-head">
+            <h2>Portal Login</h2>
+            <p>For active Nerd On Retainer clients.</p>
+          </div>
+          <div class="form-row">
+            <label for="login-email">Email</label>
+            <input id="login-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="login-password">Password</label>
+            <input id="login-password" name="password" type="password" autocomplete="current-password" required>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Continue to portal</button>
+          <p class="form-note" data-portal-note>Portal authentication is being connected. Need access now? Email hello@nerdonretainer.com.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

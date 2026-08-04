@@ -70,4 +70,36 @@
       if (open) open.style.maxHeight = open.firstElementChild.offsetHeight + 'px';
     }, { passive: true });
   }
+
+  /* ---- 4. Static consultation form mailto helper ---- */
+  var consultationForm = document.querySelector('[data-consultation-form]');
+  if (consultationForm) {
+    consultationForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var data = new FormData(consultationForm);
+      var subject = 'Consultation request - Nerd On Retainer';
+      var body = [
+        'Name: ' + (data.get('name') || ''),
+        'Email: ' + (data.get('email') || ''),
+        'Company: ' + (data.get('company') || ''),
+        'Need: ' + (data.get('need') || ''),
+        '',
+        'Context:',
+        data.get('message') || ''
+      ].join('\n');
+      window.location.href = 'mailto:hello@nerdonretainer.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+  }
+
+  /* ---- 5. Portal gateway placeholder ---- */
+  var portalForm = document.querySelector('[data-portal-form]');
+  if (portalForm) {
+    portalForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var note = document.querySelector('[data-portal-note]');
+      if (note) {
+        note.textContent = 'Portal login is being connected. Email hello@nerdonretainer.com and we will get you access.';
+      }
+    });
+  }
 })();

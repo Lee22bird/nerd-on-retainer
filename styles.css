@@ -252,6 +252,35 @@ img{max-width:100%;display:block}
 .work-link svg{transition:transform .2s}
 .work-card:hover .work-link svg{transform:translate(3px,-3px)}
 
+/* ---------------- SECONDARY PAGES ---------------- */
+.page-hero{position:relative;overflow:hidden;padding:150px 40px 92px;min-height:100vh;display:flex;align-items:center}
+.page-grid{position:relative;max-width:var(--wrap);margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,470px);gap:56px;align-items:center;width:100%}
+.page-copy{min-width:0}
+.page-panel{background:linear-gradient(160deg,#1b252b,#161616 72%);border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 40px 90px -42px rgba(0,0,0,.85)}
+.lead-form{display:flex;flex-direction:column;gap:18px}
+.form-head{margin-bottom:6px}
+.form-head h2{font-family:var(--fd);font-size:26px;text-transform:uppercase;line-height:1;margin-bottom:8px}
+.form-head p,.form-note{font-size:13.5px;color:var(--muted2);line-height:1.5}
+.form-row{display:flex;flex-direction:column;gap:8px}
+.form-row label{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted3)}
+.form-row input,.form-row select,.form-row textarea{
+  width:100%;
+  background:#101010;
+  color:var(--ink);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:14px 14px;
+  font:inherit;
+  outline:none;
+  transition:border-color .2s,box-shadow .2s,background .2s;
+}
+.form-row textarea{resize:vertical;min-height:130px}
+.form-row input:focus,.form-row select:focus,.form-row textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(34,211,238,.12);background:#121c20}
+.form-row input::placeholder,.form-row textarea::placeholder{color:#5f6670}
+.portal-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.portal-list span{font-size:13px;font-weight:700;color:var(--muted);background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.22);border-radius:999px;padding:8px 12px}
+.steps-grid.compact{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+
 /* ---------------- RESPONSIVE ---------------- */
 /* keep long display words from forcing horizontal overflow */
 .hero-h1,.h2,.logo-text,.value-num,.compare-title,.footer-motto{overflow-wrap:break-word}
@@ -264,6 +293,8 @@ img{max-width:100%;display:block}
   .hero-h1{font-size:clamp(30px,7.4vw,52px)}
   .h2{font-size:clamp(26px,6vw,52px)}
   .section{padding:78px 20px}
+  .page-hero{padding:116px 20px 66px;align-items:flex-start}
+  .page-grid{grid-template-columns:1fr;gap:36px}
   /* stack the two-column rows and let items shrink (no flex min-content overflow) */
   .hero-copy,.hero-visual,.split-copy,.split-visual{min-width:0;flex-basis:100%}
   .price-left{border-right:none;border-bottom:1px solid var(--line)}
@@ -272,10 +303,12 @@ img{max-width:100%;display:block}
 }
 @media (max-width:560px){
   .hero{padding:104px 18px 56px}
+  .page-hero{padding:104px 18px 56px}
   .hero-h1{font-size:29px;letter-spacing:0}
   .hero-sub{font-size:17px}
   .h2{font-size:26px}
   .section{padding:64px 18px}
+  .page-panel{padding:22px}
   .value-cell{border-right:none;border-bottom:1px solid var(--line2)}
   .value-num{font-size:24px}
   .price-amount .big{font-size:46px}
