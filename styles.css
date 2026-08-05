@@ -281,6 +281,38 @@ img{max-width:100%;display:block}
 .portal-list span{font-size:13px;font-weight:700;color:var(--muted);background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.22);border-radius:999px;padding:8px 12px}
 .steps-grid.compact{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 
+/* BLOG */
+.blog-hero{min-height:76vh}
+.blog-feature{align-self:stretch;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.blog-kicker{width:max-content;font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-ink);background:var(--teal);padding:7px 11px;border-radius:999px}
+.blog-feature h2{font-family:var(--fd);font-size:clamp(28px,3.2vw,42px);line-height:.98;text-transform:uppercase;letter-spacing:-.03em}
+.blog-feature p{color:var(--muted3);font-size:16px;line-height:1.58;text-wrap:pretty}
+.blog-wrap{max-width:var(--wrap);margin:0 auto}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.blog-card{display:flex;flex-direction:column;gap:13px;min-height:260px;background:linear-gradient(160deg,#1b252b,#161616 72%);border:1px solid var(--line);border-radius:18px;padding:26px;color:var(--ink);transition:transform .25s,border-color .25s,background .25s}
+.blog-card:hover{border-color:var(--teal);transform:translateY(-4px);color:var(--ink)}
+.blog-meta,.article-meta{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--slate)}
+.blog-card h3{font-size:22px;line-height:1.15;text-wrap:balance}
+.blog-card p{color:var(--muted2);font-size:15px;line-height:1.55;flex:1;text-wrap:pretty}
+.blog-card:hover .work-link svg{transform:translate(3px,-3px)}
+
+/* ARTICLE */
+.article{padding:140px 40px 0;background:radial-gradient(circle at 50% 0%,rgba(34,211,238,.14),transparent 36%),var(--bg)}
+.article-head{max-width:840px;margin:0 auto 44px}
+.article-back{display:inline-flex;color:var(--teal);font-size:14px;font-weight:800;margin-bottom:30px}
+.article-back:hover{color:var(--ink)}
+.article-head h1{font-family:var(--fd);font-size:clamp(38px,6vw,72px);line-height:.95;text-transform:uppercase;letter-spacing:-.04em;margin:10px 0 20px;text-wrap:balance}
+.article-head p{font-size:20px;line-height:1.55;color:var(--muted);max-width:760px;text-wrap:pretty}
+.article-body{max-width:760px;margin:0 auto;padding-bottom:90px;color:var(--muted3)}
+.article-body p{font-size:18px;line-height:1.78;margin-bottom:24px;text-wrap:pretty}
+.article-body h2{font-family:var(--fd);font-size:clamp(28px,3.4vw,40px);line-height:1;text-transform:uppercase;letter-spacing:-.03em;color:var(--ink);margin:54px 0 16px}
+.article-body ul{display:flex;flex-direction:column;gap:12px;margin:0 0 28px;padding:0}
+.article-body li{position:relative;list-style:none;font-size:17px;line-height:1.55;padding-left:28px;color:var(--muted4)}
+.article-body li::before{content:"";position:absolute;left:0;top:.64em;width:10px;height:10px;border-radius:50%;background:var(--teal);box-shadow:0 0 16px rgba(34,211,238,.65)}
+.article-cta{margin-top:58px;background:linear-gradient(150deg,#0e2a33 0%,#161616 72%);border:1px solid var(--teal);border-radius:24px;padding:34px;box-shadow:0 34px 80px -50px rgba(34,211,238,.6)}
+.article-cta h2{margin-top:0}
+.article-cta p{font-size:17px;color:var(--muted);margin-bottom:24px}
+
 /* ---------------- RESPONSIVE ---------------- */
 /* keep long display words from forcing horizontal overflow */
 .hero-h1,.h2,.logo-text,.value-num,.compare-title,.footer-motto{overflow-wrap:break-word}
@@ -295,6 +327,8 @@ img{max-width:100%;display:block}
   .section{padding:78px 20px}
   .page-hero{padding:116px 20px 66px;align-items:flex-start}
   .page-grid{grid-template-columns:1fr;gap:36px}
+  .blog-hero{min-height:auto}
+  .article{padding:112px 20px 0}
   /* stack the two-column rows and let items shrink (no flex min-content overflow) */
   .hero-copy,.hero-visual,.split-copy,.split-visual{min-width:0;flex-basis:100%}
   .price-left{border-right:none;border-bottom:1px solid var(--line)}
@@ -309,6 +343,8 @@ img{max-width:100%;display:block}
   .h2{font-size:26px}
   .section{padding:64px 18px}
   .page-panel{padding:22px}
+  .article-head p,.article-body p{font-size:16.5px}
+  .article-cta{padding:24px}
   .value-cell{border-right:none;border-bottom:1px solid var(--line2)}
   .value-num{font-size:24px}
   .price-amount .big{font-size:46px}
