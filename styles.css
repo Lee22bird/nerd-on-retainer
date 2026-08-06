@@ -313,6 +313,27 @@ img{max-width:100%;display:block}
 .article-cta h2{margin-top:0}
 .article-cta p{font-size:17px;color:var(--muted);margin-bottom:24px}
 
+/* ---------------- FOUNDER VIDEO ---------------- */
+.video-card{max-width:880px;margin:0 auto}
+.video-frame{position:relative;aspect-ratio:16/9;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:radial-gradient(120% 120% at 50% 0%,#1c2a30 0%,#141414 62%);display:flex;align-items:center;justify-content:center;box-shadow:0 40px 90px -50px rgba(0,0,0,.9)}
+.video-orb{position:absolute;width:60%;max-width:360px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(34,211,238,.28),rgba(34,211,238,0) 65%);pointer-events:none}
+.video-play{position:relative;z-index:1;width:92px;height:92px;border-radius:50%;border:none;background:var(--teal);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 0 40px rgba(34,211,238,.5);transition:transform .2s,box-shadow .2s}
+.video-play:hover{transform:scale(1.06);box-shadow:0 0 56px rgba(34,211,238,.75)}
+.video-play svg{margin-left:3px}
+.video-soon{position:absolute;top:16px;right:16px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);background:rgba(22,22,22,.7);border:1px solid var(--line);border-radius:999px;padding:6px 12px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.video-caption{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:12px;padding:16px 20px;background:linear-gradient(transparent,rgba(9,9,9,.74))}
+.video-avatar{width:36px;height:36px;border-radius:10px;flex:none;background:linear-gradient(150deg,var(--teal),var(--teal2));color:var(--teal-ink);display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-weight:900;font-size:15px}
+.video-meta{display:flex;flex-direction:column;line-height:1.25}
+.video-meta b{font-size:14px;font-weight:700}
+.video-meta span{font-size:12px;color:var(--muted2)}
+.video-len{margin-left:auto;font-family:var(--fm);font-size:12px;font-weight:600;color:var(--muted);background:rgba(22,22,22,.6);border:1px solid var(--line);border-radius:8px;padding:4px 9px}
+@media (max-width:560px){
+  .video-play{width:72px;height:72px}
+  .video-play svg{width:28px;height:28px}
+  .video-caption{padding:12px 14px}
+  .video-len{display:none}
+}
+
 /* ---------------- RESPONSIVE ---------------- */
 /* keep long display words from forcing horizontal overflow */
 .hero-h1,.h2,.logo-text,.value-num,.compare-title,.footer-motto{overflow-wrap:break-word}
