@@ -195,7 +195,7 @@ img{max-width:100%;display:block}
 .included{display:flex;flex-direction:column;gap:14px}
 .included li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--muted4);list-style:none}
 .included svg{flex:none;margin-top:1px}
-.pricing-grid{max-width:var(--wrap);margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+.pricing-grid{max-width:840px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:stretch}
 .plan-card{position:relative;display:flex;flex-direction:column;gap:22px;background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:30px 26px;box-shadow:0 30px 80px -55px rgba(0,0,0,.9)}
 .plan-card.featured{background:linear-gradient(160deg,#1c2830,#161616 72%);border-color:var(--teal);box-shadow:0 40px 90px -48px rgba(34,211,238,.45)}
 .plan-card.featured .plan-top{padding-top:16px}
