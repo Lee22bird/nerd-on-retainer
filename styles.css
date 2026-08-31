@@ -256,6 +256,25 @@ img{max-width:100%;display:block}
 .footer-col p{font-size:14px;color:var(--muted2);line-height:1.55;margin-bottom:16px}
 .footer-bottom{max-width:var(--wrap);margin:44px auto 0;padding-top:24px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--slate)}
 
+/* ---------------- LEGAL / POLICY PAGES ---------------- */
+.legal-main{padding-top:96px}
+.legal-hero{position:relative;overflow:hidden;padding:86px 40px 54px;border-bottom:1px solid var(--line2);background:radial-gradient(circle at 28% 20%,rgba(34,211,238,.16),transparent 34%),var(--bg)}
+.legal-wrap{position:relative;max-width:920px;margin:0 auto}
+.legal-hero h1{font-family:var(--fd);font-size:clamp(36px,6vw,72px);line-height:.95;text-transform:uppercase;letter-spacing:.01em;margin-bottom:18px}
+.legal-hero p{font-size:18px;color:var(--muted);line-height:1.6;max-width:62ch}
+.legal-updated{display:inline-flex;gap:8px;align-items:center;margin-bottom:18px;padding:8px 12px;border:1px solid rgba(34,211,238,.28);border-radius:999px;background:rgba(34,211,238,.08);color:var(--teal);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.legal-content{padding:56px 40px 96px}
+.legal-card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:34px;box-shadow:0 35px 90px -60px rgba(0,0,0,.9)}
+.legal-card+.legal-card{margin-top:18px}
+.legal-card h2{font-size:24px;margin-bottom:12px}
+.legal-card h3{font-size:17px;margin:24px 0 8px;color:var(--teal)}
+.legal-card p,.legal-card li{font-size:15.5px;color:var(--muted);line-height:1.7;text-wrap:pretty}
+.legal-card p+p{margin-top:12px}
+.legal-card ul{display:flex;flex-direction:column;gap:8px;margin:12px 0 0 20px}
+.legal-callout{margin-top:18px;padding:18px;border-radius:16px;background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.24);color:var(--muted)}
+.legal-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.legal-mini{font-size:13px;color:var(--slate);margin-top:22px}
+
 /* ---------------- PROVEN WORK ---------------- */
 .work-grid{max-width:var(--wrap);margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
 .work-card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;color:var(--ink);transition:transform .25s,border-color .25s}
